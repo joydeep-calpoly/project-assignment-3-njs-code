@@ -1,0 +1,44 @@
+{
+  "status": "ok",
+  "totalResults": 3,
+  "articles": [
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "title": null,
+      "description": "The coronavirus pandemic has brought countries to a standstill. Meanwhile, vaccinations have already started in some countries as cases continue to rise. Follow here for the latest.",
+      "url": "https://www.cnn.com/world/live-news/coronavirus-pandemic-vaccine-updates-03-24-21/index.html",
+      "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/200213175739-03-coronavirus-0213-super-tease.jpg",
+      "publishedAt": "2021-03-24T22:32:00Z",
+      "content": "A senior European diplomat is urging caution over the use of proposed new rules that would govern exports of Covid-19 vaccines to outside of the EU. The rules were announced by the European Commissio… [+2476 chars]"
+    },
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Ralph Ellis, CNN",
+      "title": "People line the streets of Boulder to honor slain police Officer Eric Talley - CNN",
+      "description": null,
+      "url": "https://www.cnn.com/2021/03/24/us/officer-talley-procession/index.html",
+      "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/210322232935-officer-eric-talley-headshot-super-tease.jpg",
+      "publishedAt": "2021-03-24T22:20:12Z",
+      "content": "null"
+    },
+    {
+      "source": {
+        "id": "ars-technica",
+        "name": "Ars Technica"
+      },
+      "author": "Samuel Axon",
+	  "title":"It’s been 20 years since the launch of Mac OS X - Ars Technica",
+      "description": "It's macOS 11 now, but the DNA is the same.",
+      "url": "https://arstechnica.com/gadgets/2021/03/its-been-20-years-since-the-launch-of-mac-os-x/",
+      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2020/06/Screen-Shot-2020-06-22-at-11.27.17-AM-2-1-760x380.png",
+      "publishedAt": "2021-03-24T21:44:01Z",
+      "content": "Enlarge/ When presenting a new path forward, Apple CEO Tim Cook put the ARM transition up with the Mac's other big transitions: PowerPC, MacOS X, and Intel.\r\n40 with 35 posters participating\r\nIt was … [+2618 chars]"
+    }
+  ]
+}
