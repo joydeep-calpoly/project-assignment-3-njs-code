@@ -1,0 +1,81 @@
+{ "status": "ok",
+  "totalResults": 38,
+  "articles":[
+    {
+      "source": {
+        "id": "cnn",
+        "name": "CNN"
+      },
+      "author": "Ralph Ellis, CNN",
+      "title": null,
+      "description": "Boulder, Colorado, continued to mourn fallen Officer Eric Talley on Wednesday.",
+      "url": "https://www.cnn.com/2021/03/24/us/officer-talley-procession/index.html",
+      "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/210322232935-officer-eric-talley-headshot-super-tease.jpg",
+      "publishedAt": "2021-03-24T22:20:12Z",
+      "content": null
+    },
+    {
+      "source": {
+        "id": "ars-technica",
+        "name": "Ars Technica"
+      },
+      "author": null,
+      "description": null,
+      "url": "https://arstechnica.com/gadgets/2021/03/its-been-20-years-since-the-launch-of-mac-os-x/",
+      "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2020/06/Screen-Shot-2020-06-22-at-11.27.17-AM-2-1-760x380.png",
+      "publishedAt": "2021-03-24T21:44:01Z",
+      "content": "Enlarge/ When presenting a new path forward, Apple CEO Tim Cook put the ARM transition up with the Mac's other big transitions: PowerPC, MacOS X, and Intel.\r\n40 with 35 posters participating\r\nIt was … [+2618 chars]"
+    },
+    {
+      "source": {
+        "id": "usa-today",
+        "name": "USA Today"
+      },
+      "author": "Rebecca Morin",
+      "title": "Vice President Kamala Harris to lead White House efforts to stem migration at the border - USA TODAY",
+      "description": "Vice President Kamala Harris will  work on establishing a partnership with Mexico and the northern triangle of Honduras, Guatemala and El Salvador.",
+      "url": null,
+      "urlToImage": "https://www.gannett-cdn.com/presto/2021/03/24/USAT/916b6cbc-bebc-4475-b510-4890de28baa7-GTY_1308935420.jpg?crop=5105,2872,x0,y0&width=3200&height=1680&fit=bounds",
+      "content": "The footage was released by the U.S. Customs and Border Protection as media has been denied access to border facilities.\r\nUSA TODAY\r\nWASHINGTON  As the Biden administration grapples with the growing … [+4575 chars]"
+    },
+    {
+      "source": {
+        "id": "usa-today",
+        "name": "USA Today"
+      },
+      "author": "Susan Page",
+      "title": "Americans back tougher gun laws, but GOP support plummets even after Atlanta, Boulder shootings, exclusive poll finds - USA TODAY",
+      "description": "A USA TODAY/Ipsos Poll after the mass shootings in Georgia and Colorado shows 65% of Americans want tougher guns laws, but GOP support falls to 35%.",
+      "url": "https://www.usatoday.com/story/news/politics/2021/03/24/poll-views-gun-laws-after-atlanta-boulder-show-even-deeper-divide/6963810002/",
+      "urlToImage": "https://www.gannett-cdn.com/presto/2021/03/23/USAT/6ad4f7d6-7dd6-48f8-8a2d-5565ef2300a1-USP_News__Colorado_Shooting.jpg?crop=4150,2334,x570,y503&width=3200&height=1680&fit=bounds",
+      "publishedAt": null,
+      "content": "President Biden urged Congress to pass gun safety measures while addressing a supermarket shooting in Boulder, Colorado.\r\nUSA TODAY\r\nTwo-thirds of Americans back tougher gun laws, a USA TODAY/Ipsos P… [+4214 chars]"
+    },
+    {
+      "source": {
+        "id": "wired",
+        "name": "Wired"
+      },
+      "author": "Lauren Goode",
+      "title": null,
+      "description": "Now people you don’t work with can send you direct messages in Slack. It’s not necessarily an “email killer,” but it’s also not great for chats.",
+      "url": "https://www.wired.com/story/slack-connect/",
+      "urlToImage": "https://media.wired.com/photos/605b8287a9a452f08fb02aac/191:100/w_1280,c_limit/Gear-Slack-Connect-Hub_No-Connections.jpg",
+      "publishedAt": "2021-03-24T20:09:51Z",
+      "content": "When someone opens up their phone, Frank told Protocol, if theyre connecting with their friends, they click on Facebook or WhatsApp. If theyre connecting with someone they work with, regardless of wh… [+2706 chars]"
+    },
+    {
+      "source": {
+        "id": "fox-news",
+        "name": "Fox News"
+      },
+      "author": "Morgan Phillips",
+      "title": "Biden says migrant surge at southern border started under Trump - Fox News",
+      "description": null,
+      "url": "https://www.foxnews.com/politics/biden-migrant-surge-southern-border-started-under-trump",
+      "urlToImage": "https://cf-images.us-east-1.prod.boltdns.net/v1/static/694940094001/04e7c241-cdac-41ac-9c50-45257668e3b6/359d9b0e-643c-4e38-99e0-a1f6fccaca1b/1280x720/match/image.jpg",
+      "publishedAt": "2021-03-24T20:02:02Z",
+      "content": "President Biden insisted Wednesday that the surge in migrants at the southern border began under the Trump administration. \r\n\"This new surge we are dealing with now started with the last administrati… [+1578 chars]"
+    }
+  ]
+  }
