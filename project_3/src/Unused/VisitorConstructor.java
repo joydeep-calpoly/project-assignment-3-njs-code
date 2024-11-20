@@ -1,4 +1,4 @@
-package project_3;
+package Unused;
 
 import java.io.IOException;
 import java.net.URI;
@@ -7,6 +7,8 @@ import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import Unused.Visitor;
 
 /*
  * Concrete visitor class for constructing NewsAPI and Simple Parser objects

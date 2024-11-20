@@ -1,6 +1,9 @@
-package project_3;
+package Unused;
 
 import java.io.IOException;
+
+import project_3.ParserNews;
+import project_3.ParserSimple;
 
 /*
  * Contract for visitor subclasses 

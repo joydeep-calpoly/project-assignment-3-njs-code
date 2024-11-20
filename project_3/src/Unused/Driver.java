@@ -1,4 +1,4 @@
-package project_3;
+package Unused;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -8,12 +8,12 @@ import java.nio.file.Paths;
 import java.util.logging.FileHandler;
 import java.util.logging.LogManager;
 import java.util.logging.Logger;
+//import java.util.Formatter; 
 import java.util.logging.SimpleFormatter;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import project_3.Visitor.format;
 
 class Driver {
 	
@@ -59,7 +59,7 @@ class Driver {
 		APIfile.setLogger(logger);
 		APIfile.filterArticles();
 		System.out.print(APIfile);
-	}
+		}
 
 	/* makeLogger
 	 * Creates and returns a custom logger to print warnings to the log file provided as an argument
