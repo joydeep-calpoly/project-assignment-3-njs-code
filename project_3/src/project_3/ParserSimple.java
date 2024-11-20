@@ -7,8 +7,6 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import project_3.Visitor.format;
-
 /*
  * Simple Article parser class
  */
@@ -124,15 +122,5 @@ public class ParserSimple implements Parser {
 	@Override
 	public void setLogger(Logger Logger) {
 			this.logger = logger;
-	}
-	
-	/*
-	 * Accept passes this instance into the visitor for construction, 
-	 * along with the source file path and format (URL or FILE). 
-	 * @return A ParserSimple object
-	 */
-	@Override
-	public Parser accept(Visitor v, String source, format f) {
-		return v.visit(this, source);
 	}
 }

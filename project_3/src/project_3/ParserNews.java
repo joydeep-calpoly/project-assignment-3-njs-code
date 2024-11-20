@@ -3,9 +3,6 @@ package project_3;
 import java.util.List;
 import java.util.Iterator;
 import com.fasterxml.jackson.annotation.*;
-
-import project_3.Visitor.format;
-
 import java.util.logging.Logger;
 
 /*
@@ -231,15 +228,5 @@ class ParserNews implements Parser {
 		public String getContent() {
 			return this.content;
 		}
-	}
-
-	/*
-	 * Accept passes this instance into the visitor for construction, 
-	 * along with the source path (url or filepath) and format (URL, FILE). 
-	 * @return A ParserNews object
-	 */
-	@Override
-	public Parser accept(Visitor v, String source, format f) {
-		return v.visit(this, source, f);
 	}
 }

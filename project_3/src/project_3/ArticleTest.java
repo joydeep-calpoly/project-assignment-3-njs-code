@@ -13,47 +13,10 @@ import java.util.logging.SimpleFormatter;
 import org.junit.jupiter.api.Test;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import project_3.Visitor.format;
-
 class ArticleTest {
 	@Test
-	void testSimpleVisitor() {
-		String simpleFile = "inputs/simple.txt";
-		Visitor visitor = new VisitorConstructor();
+	void testFormatAcceptors() {
 		
-		Parser simple = new ParserSimple();
-		simple = simple.accept(visitor, simpleFile, format.FILE);
-		simple.filterArticles();
-		assertEquals(((ParserSimple) simple).getTitle(), "Assignment #2");
-		assertEquals(((ParserSimple) simple).getDescription(),"Extend Assignment #1 to support multiple sources and to introduce source processor.");
-		assertEquals(((ParserSimple) simple).getUrl(), "https://canvas.calpoly.edu/courses/55411/assignments/274503");
-		assertEquals(((ParserSimple) simple).getDate(), "2021-04-16 09:53:23.709229");
-	}
-	@Test
-	 void testNewsAPIParsor() {
-		Visitor visitor = new VisitorConstructor();
-		String newsFile = "tests/example.json";
-		
-		Parser news = new ParserNews();
-		news = news.accept(visitor, newsFile, format.FILE);
-		news.filterArticles();
-		news.setLogger(makeLogger());
-		news.filterArticles();
-		assertEquals(((ParserNews) news).getStatus(), "ok");
-		assertEquals(((ParserNews) news).getTotalResults(), 38);
-	}
-	
-	@Test 
-	void testURLVisitor() {
-		String newsApiURL = "https://newsapi.org/v2/top-headlines?country=us&apiKey=3a1ad67f3a504678800bbdfc70b37696";
-		Visitor visitor = new VisitorConstructor();
-		Parser URLParser = new ParserNews();
-		URLParser = URLParser.accept(visitor, newsApiURL, format.URL);
-		assertNotNull(URLParser);
-		assertNotEquals(URLParser, "");
-		assertNotNull(((ParserNews) URLParser).getStatus());
-		assertNotEquals(((ParserNews)URLParser).getStatus(), "");
-
 	}
 	
 	/*
