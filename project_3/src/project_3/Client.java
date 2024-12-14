@@ -17,6 +17,6 @@ public class Client {
 		news.run();
 		FormatAcceptor url = new FormatAcceptor(format.url, source.newsapi, newsApiURL);
 		url.run();
+		
 	}
-
 }

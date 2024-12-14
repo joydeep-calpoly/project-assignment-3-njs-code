@@ -12,5 +12,6 @@ public interface Parser {
 	public void setLogger(Logger logger);
 	//toString method
 	public String toString();
+	//visit method to filter and output articles
+	void visit();
 }
-

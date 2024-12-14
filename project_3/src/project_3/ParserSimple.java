@@ -16,9 +16,9 @@ public class ParserSimple implements Parser {
 	private final String url;
 	private final String publishedAt;
 	@JsonIgnore
-	private Logger logger;
+	private Logger logger = Logger.getLogger("outputs/mylog.log");
+
 	
-	//loads JSON into private fields 
 	@JsonCreator
 	public ParserSimple(
 			@JsonProperty("title") String title,
@@ -32,7 +32,7 @@ public class ParserSimple implements Parser {
 	}
 	
 	/*
-	 * A constructor for initializing objects before construction in the visitor 
+	 * Constructor for initializing objects before construction in the visitor 
 	 */
 	public ParserSimple() {
 		this.title = "";
@@ -41,9 +41,7 @@ public class ParserSimple implements Parser {
 		this.publishedAt = "";
 	}
 	
-	/*
-	 * toString for Simple Article format
-	 */
+
 	@Override 
 	public String toString() {
 		StringBuilder str = new StringBuilder(); 
@@ -115,12 +113,20 @@ public class ParserSimple implements Parser {
 		}
 	}
 	
-
 	/*
 	 * Set logger 
 	 */
 	@Override
 	public void setLogger(Logger Logger) {
 			this.logger = logger;
+	}
+
+	@Override
+	/*
+	 * filter and output articles
+	 */
+	public void visit() {
+		filterArticles();
+		System.out.println(this);
 	}
 }

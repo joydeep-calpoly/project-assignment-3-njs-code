@@ -14,7 +14,7 @@ import java.util.logging.SimpleFormatter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 /*
- * FormatAcceptor is a class for simplifying Parser construction and display for a client
+ * FormatAcceptor is a class for simplifying Parser construction and displaying for a client
  */
 public class FormatAcceptor {
 	enum format {file, url};
@@ -25,7 +25,7 @@ public class FormatAcceptor {
 	
 	/*
 	 * The constructor must take a format, source, and sourcePath. 
-	 * These will determine the parser that is created in the run() and accept() methods
+	 * These will determine the parser that is created in the run() method
 	 * The sourcePath must correctly match the format and source specifications 
 	 * An exception is thrown if url and simple are combined, as this is an illegal argument 
 	 */
@@ -39,26 +39,14 @@ public class FormatAcceptor {
 	}
 	
 	/*
-	 * run() is responsible for declaring and displaying the correctly filtered articles, 
-	 * which includes accepting a Parser, setting a logger, filtering, and displaying articles
+	 * Create parser object and run accept to visit
 	 */
 	void run() {
-		Parser parser = accept();
-		parser.setLogger(makeLogger("outputs/mylog.log"));
-		parser.filterArticles();
-		System.out.print(parser);
-	}
-		
-	/* accept() handles the logic of building the appropriate Parser object, given the 
-	 * format, source, and sourcePath fields declared at construction 
-	 */
-	
-	private Parser accept() {
 		ObjectMapper mapper = new ObjectMapper();
 		Parser obj = null;
 		
+		//create Parser object depending on constructor parameters 
 		try {
-			
 			//Simple File format
 			if (this.format.equals(format.file) && this.source.equals(source.simple)) {
 				byte[] jsonData = Files.readAllBytes(Paths.get(sourcePath));
@@ -85,7 +73,15 @@ public class FormatAcceptor {
 		catch (IOException | URISyntaxException e) {
 			e.printStackTrace();
 		} 
-		return obj;
+		obj.setLogger(makeLogger("outputs/mylog.log"));
+		accept(obj);
+		}
+		
+	/* 
+	 * Visit parser to filter articles and display
+	 */
+	private void accept(Parser p) {
+		p.visit();
 	}
 	
 	/*

@@ -35,14 +35,14 @@ class ParserNews implements Parser {
 	}
 	
 	/**
-	 * @param logger: setter method for taking a Logger object from the Main/Driver
+	 * @param logger: setter method for taking a Logger object from the driver
 	 */
 	public void setLogger(Logger logger) {
 		this.logger = logger;
 	}
 
 	/**
-	 * filterArticles removes any articles from the articles list that have null values, and logs a warning message to mylog.log
+	 * filterArticles removes any articles that have null values, and logs a warning message to mylog.log
 	 */
 	public void filterArticles() {
 		Iterator<Article> iterator = this.articles.iterator();
@@ -229,4 +229,17 @@ class ParserNews implements Parser {
 			return this.content;
 		}
 	}
+
+	@Override
+	/*
+	 * filter and output articles
+	 */
+	public void visit() {
+		filterArticles();
+		System.out.println(this);
+	}
+	
+	
+	
+	
 }

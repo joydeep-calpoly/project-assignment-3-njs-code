@@ -14,10 +14,6 @@ import org.junit.jupiter.api.Test;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 class ArticleTest {
-	@Test
-	void testFormatAcceptors() {
-		
-	}
 	
 	/*
 	 * tests that the simple parser is parsed correctly
